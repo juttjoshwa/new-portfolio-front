@@ -1,0 +1,55 @@
+.message-section {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(213, 224, 227);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: all 0.7s ease-in-out;
+}
+
+.heading-message-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.heading-message-container > h1 {
+  margin-top: 3rem;
+  font-family: "nunito", sans-serif;
+  font-size: 3.5rem;
+  font-weight: 500;
+}
+.message-box-container {
+  width: 850px;
+  height: 400px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  box-shadow: 3px 3px 7px rgb(0, 0, 0);
+  overflow: scroll;
+  padding: 1rem;
+}
+.message-box {
+  width: 90%;
+  padding: 0.4rem;
+  background-color: rgb(51, 57, 150);
+  border-radius: 5px;
+  color: rgb(255, 255, 255);
+}
+.card-box {
+  /* border/: 2px rgb(219, 207, 207) solid; */
+  padding: 13px;
+  box-shadow: 3px 3px 7px rgb(0, 0, 0);
+  margin: 5px;
+  background-color: rgb(75, 63, 63);
+}
+.card-box > button {
+  border: none;
+  border-radius: 5px;
+  width: 8rem;
+  height: 2rem;
+  background-color: rgb(51, 57, 150);
+  color: white;
+}

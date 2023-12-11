@@ -1,0 +1,502 @@
+.container-user-project {
+  background-color: rgb(213, 224, 227);
+  transition: all 0.7s ease-in-out;
+  user-select: none;
+  font-family: "Nunito", sans-serif;
+  scroll-snap-type: y mandatory;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.nav-btn-user-project {
+  position: relative;
+  z-index: 30;
+  top: 0;
+  bottom: 0;
+  left: 2rem;
+}
+.nav-btn-user-project > button {
+  border: none;
+  background-color: transparent;
+  color: blueviolet;
+  width: 80px;
+  height: 50px;
+}
+.section-user-project1 {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  background-attachment: fixed;
+}
+.section-user-project1 .content .main-text-container .text-user-project {
+  font-size: 5rem;
+  position: relative;
+  opacity: 0.8;
+  top: -4.9rem;
+  z-index: 10;
+  text-align: center;
+  color: rgb(213, 224, 227);
+}
+.bubble-1 {
+  position: absolute;
+  width: 100%;
+  height: 22rem;
+  top: 21rem;
+  right: 0.1em;
+  background-color: rgb(51, 57, 150);
+  opacity: 0.8;
+  border-top-right-radius: 50% 100%;
+  border-top-left-radius: 50% 100%;
+  z-index: 5;
+  background-attachment: fixed;
+}
+
+.main-text-container > h3 {
+  text-align: center;
+  position: relative;
+  top: 10rem;
+  color: rgb(213, 224, 227);
+  right: 0.7rem;
+  z-index: 25;
+  opacity: 0.7;
+  font-weight: 100;
+  font-size: 1.3rem;
+}
+.container-user-projects {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  padding: 2rem;
+}
+.container-user-projects > h1 {
+  line-height: 30px;
+  position: relative;
+  z-index: 5;
+  font-size: 3.6rem;
+}
+.container-user-projects .under-line {
+  width: 13rem;
+  height: 1px;
+  background-color: blueviolet;
+}
+.card-section-user {
+  display: flex;
+  flex-wrap: wrap; /* Enable wrapping to create a new row */
+  justify-content: space-between;
+  align-items: flex-start; /* Align items to the start of the container */
+  margin: 0 -1rem;
+  padding: 2rem;
+  overflow: hidden;
+}
+
+.user-card {
+  /* width: 300px; */
+  /* background-color: rgb(230, 212, 212); */
+  /* height: 350px; */
+  border-radius: 5px;
+  position: relative;
+  padding: 2rem;
+}
+.user-card-img {
+  width: 400px;
+  height: 500px;
+  position: absolute;
+  border-radius: 5px;
+}
+
+.hero-container {
+  margin: 1rem;
+  display: flex;
+}
+
+.main-container {
+  width: 270px;
+  height: 400px;
+  position: relative;
+  margin: 0 20px;
+}
+
+.poster-container {
+  width: 230px;
+  position: absolute;
+  top: 10px;
+  left: 35px;
+  z-index: 9999;
+}
+
+.poster {
+  width: 200px;
+  height: 250px;
+  /* box-shadow: 0 5px 20px 3px rgba(0, 0, 0, 0.6); */
+}
+
+.ticket-container {
+  background: #fff;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+  position: absolute;
+  top: 20px;
+  box-shadow: 0 5px 20px 3px rgba(0, 0, 0, 0.6);
+  opacity: 0;
+}
+
+.main-container:hover .ticket-container {
+  opacity: 1;
+  animation: bounceIn 0.6s linear;
+}
+
+@keyframes bounceIn {
+  0%,
+  20%,
+  40%,
+  60%,
+  80%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  20% {
+    -webkit-transform: scale3d(1.03, 1.03, 1.03);
+    transform: scale3d(1.03, 1.03, 1.03);
+  }
+  40% {
+    -webkit-transform: scale3d(0.9, 0.9, 0.9);
+    transform: scale3d(0.9, 0.9, 0.9);
+  }
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(1.01, 1.01, 1.01);
+    transform: scale3d(1.01, 1.01, 1.01);
+  }
+  80% {
+    -webkit-transform: scale3d(0.97, 0.97, 0.97);
+    transform: scale3d(0.97, 0.97, 0.97);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+}
+
+/* @keyframes bounce {
+  50% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+} */
+
+.ticket__content {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+}
+
+.ticket__movie-title {
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.ticket__movie-slogan {
+  color: #999;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+}
+
+.ticket__current-price {
+  color: #69c982;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.ticket__old-price {
+  color: #999;
+  text-decoration: line-through;
+  margin-bottom: 10px;
+}
+
+.ticket__buy-btn {
+  cursor: pointer;
+  width: 100%;
+  background: #2f2f2f;
+  color: white;
+  padding: 15px 0;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: 0;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.backarrow {
+  font-size: xx-large;
+}
+
+/* !here!  ========================== */
+
+@media only screen and (max-width: 768px) {
+  .container-user-project {
+    background-color: rgb(213, 224, 227);
+    transition: all 0.7s ease-in-out;
+    user-select: none;
+    font-family: "Nunito", sans-serif;
+    scroll-snap-type: y mandatory;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+  .nav-btn-user-project {
+    position: relative;
+    z-index: 30;
+    top: 0;
+    bottom: 0;
+    left: 2rem;
+  }
+  .nav-btn-user-project > button {
+    border: none;
+    background-color: transparent;
+    color: blueviolet;
+    width: 80px;
+    height: 50px;
+  }
+  .backarrow {
+    font-size: xx-large;
+  }
+  .section-user-project1 {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    background-attachment: fixed;
+  }
+  .section-user-project1 .content .main-text-container .text-user-project {
+    font-size: 3rem;
+    position: relative;
+    opacity: 0.8;
+    top: -2.9rem;
+    z-index: 10;
+    text-align: center;
+    color: rgb(213, 224, 227);
+  }
+  .bubble-1 {
+    position: absolute;
+    width: 100%;
+    height: 12rem;
+    top: 21rem;
+    right: 0.1em;
+    background-color: rgb(51, 57, 150);
+    opacity: 0.8;
+    border-top-right-radius: 100px;
+    border-top-left-radius: 100px;
+    z-index: 5;
+    background-attachment: fixed;
+  }
+
+  .main-text-container > h3 {
+    text-align: center;
+    position: relative;
+    top: 10rem;
+    color: rgb(213, 224, 227);
+    right: 0.7rem;
+    z-index: 25;
+    opacity: 0.7;
+    font-weight: 100;
+    font-size: 1rem;
+  }
+  .container-user-projects {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    padding: 2rem;
+  }
+  .container-user-projects > h1 {
+    line-height: 30px;
+    position: relative;
+    z-index: 5;
+    font-size: 2.2rem;
+  }
+  .no-project-card1 {
+    font-size: 1rem;
+  }
+  .container-user-projects .under-line {
+    width: 9rem;
+    height: 1px;
+    background-color: blueviolet;
+  }
+  .card-section-user {
+    display: flex;
+    flex-wrap: wrap; /* Enable wrapping to create a new row */
+    justify-content: space-between;
+    align-items: flex-start; /* Align items to the start of the container */
+    margin: 0 -1rem;
+    padding: 2rem;
+    overflow: hidden;
+  }
+
+  .user-card {
+    /* width: 300px; */
+    /* background-color: rgb(230, 212, 212); */
+    /* height: 350px; */
+    border-radius: 5px;
+    position: relative;
+    padding: 2rem;
+  }
+  .user-card-img {
+    width: 400px;
+    height: 500px;
+    position: absolute;
+    border-radius: 5px;
+  }
+
+  .hero-container {
+    margin: 1rem;
+    display: flex;
+  }
+
+  .main-container {
+    width: 270px;
+    height: 550px;
+    position: relative;
+    margin: -2px;
+  }
+
+  .poster-container {
+    width: 230px;
+    position: absolute;
+    top: 10px;
+    left: 35px;
+    z-index: 9999;
+  }
+
+  .poster {
+    width: 200px;
+    height: 250px;
+    border-radius: 5px;
+    /* box-shadow: 0 5px 20px 3px rgba(0, 0, 0, 0.6); */
+  }
+
+  .ticket-container {
+    background: #fff;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    position: absolute;
+    top: 20px;
+    box-shadow: 0 5px 20px 3px rgba(0, 0, 0, 0.6);
+    opacity: 0;
+  }
+
+  .main-container:hover .ticket-container {
+    opacity: 1;
+    animation: bounceIn 0.6s linear;
+  }
+
+  @keyframes bounceIn {
+    0%,
+    20%,
+    40%,
+    60%,
+    80%,
+    to {
+      -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+    0% {
+      opacity: 0;
+      -webkit-transform: scale3d(0.3, 0.3, 0.3);
+      transform: scale3d(0.3, 0.3, 0.3);
+    }
+    20% {
+      -webkit-transform: scale3d(1.03, 1.03, 1.03);
+      transform: scale3d(1.03, 1.03, 1.03);
+    }
+    40% {
+      -webkit-transform: scale3d(0.9, 0.9, 0.9);
+      transform: scale3d(0.9, 0.9, 0.9);
+    }
+    60% {
+      opacity: 1;
+      -webkit-transform: scale3d(1.01, 1.01, 1.01);
+      transform: scale3d(1.01, 1.01, 1.01);
+    }
+    80% {
+      -webkit-transform: scale3d(0.97, 0.97, 0.97);
+      transform: scale3d(0.97, 0.97, 0.97);
+    }
+    to {
+      opacity: 1;
+      -webkit-transform: scaleX(1);
+      transform: scaleX(1);
+    }
+  }
+
+  .ticket__content {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+  }
+
+  .ticket__movie-title {
+    text-transform: uppercase;
+    margin-bottom: 155px;
+  }
+
+  .ticket__movie-slogan {
+    color: #999;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+  }
+
+  .ticket__current-price {
+    color: #69c982;
+    font-size: 1.4rem;
+    font-weight: bold;
+  }
+
+  .ticket__old-price {
+    color: #999;
+    text-decoration: line-through;
+    margin-bottom: 10px;
+  }
+
+  .ticket__buy-btn {
+    cursor: pointer;
+    width: 100%;
+    background: #2f2f2f;
+    color: white;
+    padding: 15px 0;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 0;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+}

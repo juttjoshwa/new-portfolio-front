@@ -1,0 +1,150 @@
+.skills-container {
+  width: 100vw;
+  height: 100vh;
+  padding: 10px;
+  display: flex;
+  background-color: rgb(213, 224, 227);
+  user-select: none;
+  overflow: hidden;
+}
+.heading-container {
+  margin-top: 50px;
+  margin-left: 80px;
+}
+.heading-container > h3 {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  font-size: 4rem;
+  margin-top: 32px;
+  font-weight: 600;
+  color: rgb(65, 64, 64);
+  font-family: "Rancho", cursive;
+}
+.skill-line {
+  height: 1.7px;
+  background-color: rgb(51, 57, 150);
+  width: 7rem;
+  margin-top: -12px;
+}
+.skills-section {
+  display: flex;
+}
+.skillName {
+  opacity: 80%;
+  font-family: "Nunito", sans-serif;
+  list-style: none;
+  margin-top: 6rem;
+  display: grid; /* Use grid layout */
+  grid-template-columns: repeat(5, 1fr); /* 5 items in a row */
+  gap: 3rem; /* Adjust the gap between items as needed */
+  font-size: x-large;
+}
+
+.bracket-section1 {
+  margin-top: 0rem;
+  width: 2px;
+  border-radius: 20%;
+  height: 30rem;
+  margin-left: 3rem;
+  background-color: rgb(51, 57, 150);
+}
+.bracket2 {
+  width: 100px;
+  height: 600px;
+  margin-left: 10px;
+}
+.api-fetching-skill {
+  display: grid;
+  grid-template-columns: repeat(5, 5fr); /* 4 columns with equal width */
+  margin-left: 2rem;
+  margin-top: 60px;
+  grid-gap: 50px; /* Adjust the gap between items as needed */
+  padding: 50px;
+}
+.skillName1 {
+  padding: 0.7rem;
+  border-radius: 10px;
+  box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.5);
+  user-select: none;
+}
+
+.api-fetching-skill h4 {
+  /* Additional styling for each h3 element if needed */
+  padding: 5px;
+  background-color: transparent;
+  text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .skills-container {
+    width: 100vw;
+    height: 100vh;
+    padding: 10px;
+    display: flex;
+    background-color: rgb(213, 224, 227);
+    user-select: none;
+  }
+  .heading-container {
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+  .heading-container > h3 {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    font-size: 2.5rem;
+    margin-top: 43px;
+    font-weight: 600;
+    color: rgb(65, 64, 64);
+    font-family: "Rancho", cursive;
+  }
+  .skill-line {
+    height: 1.7px;
+    background-color: rgb(51, 57, 150);
+    width: 7rem;
+    position: absolute;
+    margin-top: 0px;
+  }
+  .skills-section {
+    display: flex;
+    position: relative;
+  }
+  .skillName {
+    opacity: 80%;
+    font-family: "Nunito", sans-serif;
+    list-style: none;
+    margin-top: 6rem;
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(5, 1fr); /* 5 items in a row */
+    gap: 3rem; /* Adjust the gap between items as needed */
+    font-size: x-large;
+  }
+
+  .bracket-section1 {
+    margin-top: 0rem;
+    width: 2px;
+    border-radius: 20%;
+    height: 30rem;
+    margin-left: 1rem;
+    background-color: rgb(51, 57, 150);
+  }
+ 
+  .api-fetching-skill {
+    display: grid;
+    grid-template-columns: repeat(5, 5fr); /* 4 columns with equal width */
+    margin-left: 1rem;
+    margin-top: 70px;
+    grid-gap: 50px; /* Adjust the gap between items as needed */
+    padding: 50px;
+  }
+  .skillName1 {
+    padding: 0.7rem;
+    border-radius: 10px;
+    box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.5);
+    user-select: none;
+  }
+
+  .api-fetching-skill h4 {
+    /* Additional styling for each h3 element if needed */
+    padding: 5px;
+    background-color: transparent;
+    text-align: center;
+  }
+}

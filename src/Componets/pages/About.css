@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Rancho&family=Style+Script&display=swap");
+.About-Main {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(213, 224, 227);
+  user-select: none;
+}
+.heading-container-about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.heading-container-about > h1 {
+  font-family: "Rancho", cursive;
+  margin-top: 5rem;
+  font-size: 4rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  font-weight: 600;
+  color: rgb(65, 64, 64);
+}
+.text-section-about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2.5rem 13rem 0rem 13rem;
+}
+.t-section-about {
+  text-align: justify;
+  font-family: "Nunito", sans-serif;
+  position: relative;
+  font-size: 1.3rem;
+  z-index: 5;
+  font-weight: 500;
+  color: rgb(65, 64, 64);
+  background-color: #aeaec2;
+  padding: 1.5rem;
+  border-radius: 2rem;
+  user-select: none;
+}
+
+.b-section-about1 {
+  position: absolute;
+  background-color: transparent;
+  width: 600px;
+  height: 250px;
+  right: 150px;
+  background-image: radial-gradient(#131335 2px, transparent 2px);
+  background-size: 80px 80px;
+  z-index: 0;
+}
+.b-section-about {
+  position: absolute;
+  z-index: 2;
+  opacity: 0.5;
+  right: 150px;
+  background-color: transparent;
+  width: 60vw;
+  border-radius: 1.5rem;
+  height: 300px;
+  margin-top: 4rem;
+  background-image: radial-gradient(#131335 2px, transparent 2px);
+  background-size: 20px 20px;
+}
+.About-me-cute {
+  position: relative;
+  z-index: 5;
+}
+.cute-hello {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  opacity: 10%;
+  z-index: 1;
+  display: inline-block;
+  left: 46.9rem;
+  top: 44rem;
+}
+.cute {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  z-index: 1;
+  display: inline-block;
+  left: 43rem;
+  bottom: -200px;
+  cursor: pointer;
+  /* animation: CuteImage 1s ease-in-out 1;
+  overflow: hidden; */
+}
+/* .cute.animate {
+  animation: CuteImage 1s ease-in-out 1;
+  overflow: hidden;
+} */
+@keyframes CuteImage {
+  0% {
+    transform: translateY(0px);
+    opacity: 10%;
+    width: 40px;
+    height: 40px;
+    margin-top: 40px;
+    margin-left: 20px;
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+@media only screen and (max-width: 768px) {
+  .heading-container-about > h1 {
+    font-family: "Rancho", cursive;
+    margin-top: 3.2rem;
+    font-size: 3.5rem;
+    font-weight: 550;
+    position: relative;
+    z-index: 99;
+    color: rgb(5, 5, 5);
+  }
+  .About-me-cute {
+    position: relative;
+    z-index: 5;
+  }
+  .cute {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    z-index: 1;
+    left: 12rem;
+    cursor: pointer;
+  }
+  .cute-hello {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    opacity: 10%;
+    z-index: 1;
+    display: inline-block;
+    left: 14.7rem;
+    top: 53.4rem;
+  }
+  .text-section-about {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 1rem 1rem 1rem;
+    margin-top: 20rem;
+  }
+  .b-section-about {
+    position: absolute;
+    z-index: 2;
+    opacity: 0.5;
+    right: 10px;
+    background-color: transparent;
+    width: 90vw;
+    border-radius: 1rem;
+    height: 350px;
+    margin-top: -35rem;
+    background-image: radial-gradient(#131335 2px, transparent 2px);
+    overflow: hidden;
+    background-size: 20px 20px;
+  }
+
+  .text-paragraph {
+    width: 350px;
+    position: relative;
+    left: 0px;
+    height: 330px;
+    font-size: medium;
+    text-align: start;
+    overflow: hidden;
+  }
+  /*
+  .t-section-about {
+    font-family: "Nunito", sans-serif;
+    position: relative;
+    font-size: 0rem;
+    z-index: 5;
+    width: 90vw;
+    font-weight: 300;
+    color: rgb(65, 64, 64);
+    background-color: #aeaec2;
+    padding: 1rem;
+    border-radius: 8px;
+    user-select: none;
+    top: -3.5rem;
+  } */
+  /* .t-section-about {
+    width: 80vw;
+    height: 100%;
+    display: block;
+    padding: 0.5rem;
+    padding-left: 0rem;
+    margin: 0rem;
+    top: -18rem;
+    border-radius: 2px;
+    overflow: scroll;
+    font-size: small;
+  } */
+
+  .t-section-about {
+    text-align: justify;
+    font-family: "Nunito", sans-serif;
+    position: relative;
+    font-size: 1.3rem;
+    z-index: 5;
+    font-weight: 500;
+    color: rgb(65, 64, 64);
+    background-color: #aeaec2;
+    padding: 1rem;
+    border-radius: 1rem;
+    top: -18rem;
+    user-select: none;
+  }
+}

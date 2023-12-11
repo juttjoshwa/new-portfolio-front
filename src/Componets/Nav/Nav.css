@@ -1,0 +1,32 @@
+.nav-container {
+  background-color: rgb(213, 224, 227);
+  padding: 10px;
+  user-select: none;
+}
+.navbar-brand {
+  color: rgb(65, 64, 64);
+  transition: all 0.6s ease-in-out;
+  text-shadow: 2px 1px 4px rgba(0, 0, 0, 0.5);
+  font-family: "Rancho", sans-serif;
+}
+.navbar-brand:hover {
+  color: rgb(221, 221, 245);
+}
+.navbar {
+  transition: all 0.7s ease-in-out;
+}
+.Nav-Mode-img {
+  width: 30px;
+  margin: 5px;
+  height: 30px;
+  margin-top: 0.4rem;
+  cursor: pointer;
+}
+
+.fontsNav {
+  font-family: "Nunito", sans-serif;
+  font-size: 1.2rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  font-weight: 500;
+  color: rgb(65, 64, 64);
+}

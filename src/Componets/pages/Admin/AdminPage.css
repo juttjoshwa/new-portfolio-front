@@ -1,0 +1,192 @@
+.admin-page-section {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(213, 224, 227);
+  transition: all 0.7s ease-in-out;
+  user-select: none;
+}
+.heading-container-admin {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  align-items: center;
+  position: relative;
+  top: 10rem;
+}
+.heading-container-admin > h1 {
+  font-family: "Nunito", sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 5rem;
+
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+.image-container-admin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 10rem;
+  padding: 10rem;
+}
+
+.down-arrow-admin {
+  width: 25px;
+  height: 25px;
+  animation: Moveup 1s ease infinite alternate-reverse;
+  cursor: pointer;
+}
+@keyframes Moveup {
+  0% {
+    transform: translateY(-3px);
+  }
+  100% {
+    transform: translateY(3px);
+  }
+}
+
+.Btn-section-admin {
+  background-color: rgb(213, 224, 227);
+  padding: 2rem;
+  height: 100vh;
+  width: 100vw;
+  transition: all 0.7s ease-in-out;
+  user-select: none;
+}
+.btn-container1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 3rem;
+  flex-direction: column;
+}
+.btn-container1 > button {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border: none;
+  font-family: "Nunito", sans-serif;
+  font-weight: 500;
+  font-size: 2.5rem;
+  background-color: rgb(51, 57, 150);
+  color: rgb(213, 224, 227);
+  box-shadow: 4px 2px 7px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease;
+  border-radius: 5px;
+  outline: none;
+  margin: 1rem;
+}
+
+.btn-all-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-container2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 3rem;
+  flex-direction: column;
+}
+.btn-container2 > button {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border: none;
+  font-family: "Nunito", sans-serif;
+  font-weight: 500;
+  font-size: 2.5rem;
+  background-color: rgb(51, 57, 150);
+  color: rgb(213, 224, 227);
+  box-shadow: 4px 2px 7px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease;
+  border-radius: 5px;
+  outline: none;
+  margin: 1rem;
+}
+
+.Project-section-admin {
+  /* width: 100vw;
+  height: 100vh; */
+  background-color: rgb(213, 224, 227);
+  transition: all 0.7s ease-in-out;
+  user-select: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem;
+}
+.project-card {
+  display: flex;
+  width: 550px;
+  border-radius: 5px;
+  height: 400px;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+.card-section-admin {
+  display: flex;
+  flex-wrap: wrap; /* Enable wrapping to create a new row */
+  justify-content: space-between;
+  align-items: flex-start; /* Align items to the start of the container */
+  margin: 0 -1rem; /* Add negative margin to compensate for spacing */
+}
+.form-label {
+  font-family: "Nunito", sans-serif;
+}
+.no-project-card {
+  width: 600px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 3rem;
+  font-family: "Nunito", sans-serif;
+
+  font-weight: 600;
+  height: 300px;
+  background-color: #fff;
+}
+.card {
+  width: calc(
+    50% - 2rem
+  ); /* Set the width to 50% of the container minus spacing */
+  margin: 1rem; /* Add spacing between cards */
+  background-color: #fff;
+  border-radius: 5px;
+  overflow: hidden; /* Hide overflow to prevent layout issues */
+  box-shadow: 2px 1px 7px rgba(0, 0, 0, 0.5);
+}
+
+.card img {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio of the image */
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.card-body {
+  padding: 1rem;
+}
+
+/* Adjust other styles as needed */
+
+.card-body > h3 {
+  font-size: 2rem;
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+}
+.card-body > p {
+  font-size: 1.5rem;
+
+  font-family: "Nunito", sans-serif;
+}
+.card-body > button {
+  padding: 1rem;
+  width: 12rem;
+  font-size: 1rem;
+  margin-left: 2rem;
+}

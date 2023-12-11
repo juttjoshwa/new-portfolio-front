@@ -1,0 +1,11 @@
+.admin-skill-page{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(213, 224, 227);
+    transition: all 0.7s ease-in-out;
+    user-select: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}

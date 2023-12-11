@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Style+Script&display=swap");
+.Main-home {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(213, 224, 227);
+  display: flex;
+  justify-content: center;
+  transition: all 0.7s ease-in-out;
+  user-select: none;
+}
+
+.Scroll-arrow {
+  margin-left: 10px;
+  margin-top: 70px;
+  transition: all 0.5s ease-in-out;
+  font-family: 'Nunito', sans-serif;
+  font-size: 1rem;
+  font-weight: 800;
+  color: rgb(65, 64, 64);
+}
+.both-image-index {
+  animation: all 0.4s ease-in-out;
+}
+.Arrow {
+  width: 15px;
+  height: 15px;
+  animation: Moveup 1s ease infinite alternate-reverse;
+  cursor: pointer;
+}
+@keyframes Moveup {
+  0% {
+    transform: translateY(-3px);
+  }
+  100% {
+    transform: translateY(3px);
+  }
+}
+.avatar-image {
+  height: 480px;
+  margin-left: 50px;
+  position: relative;
+  width: 450px;
+  z-index: 0;
+}
+.both-image-index {
+  display: flex;
+}
+.dot-avatar {
+  z-index: 0;
+  position: absolute;
+  width: 540px;
+  top: 20px;
+  left: 610px;
+  height: 450px;
+  transition: all 0.3s ease-in-out;
+  animation: moveAvatar 4s infinite alternate-reverse;
+}
+
+.eye-left {
+  width: 13px;
+  height: 9px;
+  background-color: rgb(178, 177, 181);
+  border-radius: 70%;
+  position: relative;
+  z-index: 3;
+  top: 111px;
+  left: 237px;
+}
+.eye-right {
+  width: 19px;
+  height: 12px;
+  border-radius: 70%;
+  position: relative;
+  z-index: 3;
+  background-color: rgb(178, 177, 181);
+  top: 103px;
+  left: 242px;
+}
+.pupil-1 {
+  background-color: rgb(19, 19, 53);
+  width: 4px;
+  height: 4.5px;
+  border-radius: 50%;
+  color: white;
+}
+.pupil-2 {
+  background-color: rgb(19, 19, 53);
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  color: white;
+  margin-top: 2px;
+  margin-left: 1.5px;
+}
+.image-side {
+  overflow: hidden;
+}
+
+/* /////////// text side //////////// */
+
+.Sign-main-heading {
+  font-family: "Rancho", cursive;
+  margin-top: 75px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  font-size: 5rem;
+  margin-bottom: 40px;
+  margin-top: 120px;
+  color: rgb(86,21,35);
+}
+.Sign-main {
+  width: 300px;
+  margin-left: 2px;
+  margin-top: 12px;
+  transition: all 0.7s ease-in-out;
+}
+.p-text-area {
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.5rem;
+  transition: all 0.7s ease-in-out;
+  margin-top: 5px;
+  line-height: 20px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  
+}
+.btn-section > button {
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 1.5rem;
+  font-family: "Rancho", cursive;
+  padding: 10px 30px 10px 30px;
+  border: none;
+  background-color: rgb(51, 57, 150);
+  color: rgb(213, 224, 227);
+  border-radius: 5px;
+  transition: all 0.5s ease-in-out;
+  box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.5);
+}
+.btn-section > button:hover {
+  background-color: rgb(102, 109, 207);
+}
+@media only screen and (max-width: 768px) {
+  .Main-home {
+    height: 100vh;
+    width: 100vw;
+  }
+  .Sign-main-heading {
+    margin-left: 32px;
+    margin-top: 100px;
+  }
+  .image-side {
+    overflow: hidden;
+  }
+  .both-image-index {
+    display: none;
+  }
+  .eye-left {
+    display: none;
+  }
+  .eye-right {
+    display: none;
+  }
+  .avatar-image {
+    display: none;
+  }
+  .p-text-area {
+    margin-left: 30px;
+    margin-top: 0.7rem;
+    font-size: 1.2rem;
+  }
+  .btn-section {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-left: 15px;
+  }
+  .btn-section > button {
+    margin-left: 15px;
+    margin-right: 5px;
+    border: none;
+    font-size: 1rem;
+    padding: 10px;
+    font-family: "Script";
+  }
+  .Scroll-arrow{
+    margin-top: 200px;
+    margin-left: 32px;
+  }
+}
